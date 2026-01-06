@@ -39,6 +39,7 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
   --color-header-teal: var(--header-teal);
+  --color-hero-teal: var(--hero-teal);
   --color-header-orange: var(--header-orange);
   --color-header-orange-dark: var(--header-orange-dark);
   --color-header-text-on-dark: var(--header-text-on-dark);
@@ -89,6 +90,7 @@
 
   /* Custom header colors - Dark teal and vibrant orange */
   --header-teal: oklch(0.32 0.07 195);
+  --hero-teal: oklch(0.28 0.07 195);
   --header-orange: oklch(0.68 0.24 30);
   --header-orange-dark: oklch(0.58 0.24 30);
   --header-text-on-dark: oklch(1 0 0);
