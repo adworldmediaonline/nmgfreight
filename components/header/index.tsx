@@ -41,7 +41,7 @@ export function Header({ config: userConfig, className }: HeaderProps) {
       />
 
       {/* Main Navigation Bar */}
-      <div className="bg-header-bg-light lg:bg-header-teal text-header-text-on-light lg:text-header-text-on-dark">
+      <div className="bg-header-teal text-header-text-on-dark">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo Section */}
