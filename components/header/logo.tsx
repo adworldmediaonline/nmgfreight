@@ -19,7 +19,7 @@ export function Logo({
       <span
         className={cn(
           "font-bold uppercase tracking-wide",
-          variant === "mobile" && "text-xl text-foreground",
+          variant === "mobile" && "text-xl !text-header-orange",
           variant === "desktop" && "text-lg text-header-text-on-dark leading-tight whitespace-nowrap",
           variant === "menu" && "text-xl text-foreground"
         )}
