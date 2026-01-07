@@ -12,21 +12,19 @@ export const defaultFooterConfig: FooterConfig = {
   },
   columns: [
     {
-      title: "Industry Served",
+      title: "Legal",
       links: [
-        { label: "Frozen Food", href: "/services/frozen-food" },
-        { label: "Automobile", href: "/services/automobile" },
-        { label: "Industrial Freight Needs", href: "/services/industrial" },
-        { label: "Retail", href: "/services/retail" },
-        { label: "Packaging", href: "/services/packaging" },
+        { label: "Privacy Policy", href: "/privacy-policy" },
+        { label: "Terms & Conditions", href: "/terms-conditions" },
+        { label: "Shipping", href: "/shipping" },
       ],
     },
     {
       title: "Company Info",
       links: [
-        { label: "About Us", href: "/about" },
-        { label: "Contact Us", href: "/contact" },
-        { label: "Get A Quote", href: "/quote" },
+        { label: "About Us", href: "/about-us" },
+        { label: "Contact Us", href: "/contact-us" },
+        { label: "Get A Quote", href: "/get-a-quote" },
         { label: "Appointments", href: "/appointments" },
       ],
     },

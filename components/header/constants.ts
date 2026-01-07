@@ -4,9 +4,9 @@ export const defaultHeaderConfig: HeaderConfig = {
   navigationItems: [
     { label: "Home", href: "/", active: true },
     { label: "Services", href: "/services" },
-    { label: "About Us", href: "/about" },
-    { label: "Contact Us", href: "/contact" },
-    { label: "Get A Quote", href: "/quote" },
+    { label: "About Us", href: "/about-us" },
+    { label: "Contact Us", href: "/contact-us" },
+    { label: "Get A Quote", href: "/get-a-quote" },
   ],
   contactInfo: {
     email: "info@nmgfreight.com",

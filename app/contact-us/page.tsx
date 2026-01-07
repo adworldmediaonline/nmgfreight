@@ -1,8 +1,9 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
+import { ContactUs } from "@/components/contact-us";
 
-export default function ContactUs() {
+export default function ContactUsPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header className="sticky top-0 z-50 w-full" />
@@ -15,8 +16,8 @@ export default function ContactUs() {
           },
         }}
       />
-      <main className="container mx-auto px-4 py-12 lg:py-16 flex-1">
-        {/* Page content will go here */}
+      <main className="flex-1">
+        <ContactUs />
       </main>
       <Footer />
     </div>
