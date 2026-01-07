@@ -1,6 +1,8 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
+import { WarehouseServices } from "@/components/warehouse-services";
+import { CtaSection } from "@/components/cta-section";
 
 export default function WarehouseStorage() {
   return (
@@ -15,12 +17,9 @@ export default function WarehouseStorage() {
           },
         }}
       />
-      <main className="container mx-auto px-4 py-12 lg:py-16 flex-1">
-        {/* Warehouse & Storage page content */}
-        <h2 className="text-3xl font-bold mb-4">Warehouse & Storage Solutions</h2>
-        <p className="text-lg text-muted-foreground">
-          Secure and efficient warehousing and storage facilities to meet your inventory management needs.
-        </p>
+      <main className="flex-1">
+        <WarehouseServices />
+        <CtaSection />
       </main>
       <Footer />
     </div>
