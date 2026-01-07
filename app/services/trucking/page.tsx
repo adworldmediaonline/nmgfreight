@@ -1,8 +1,10 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
+import { TruckingServices } from "@/components/trucking-services";
+import { CtaSection } from "@/components/cta-section";
 
-export default function TruckingServices() {
+export default function TruckingServicesPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header className="sticky top-0 z-50 w-full" />
@@ -15,12 +17,9 @@ export default function TruckingServices() {
           },
         }}
       />
-      <main className="container mx-auto px-4 py-12 lg:py-16 flex-1">
-        {/* Trucking Services page content */}
-        <h2 className="text-3xl font-bold mb-4">Professional Trucking Services</h2>
-        <p className="text-lg text-muted-foreground">
-          Our comprehensive trucking services ensure reliable and efficient transportation solutions for your freight needs.
-        </p>
+      <main className="flex-1">
+        <TruckingServices />
+        <CtaSection />
       </main>
       <Footer />
     </div>
