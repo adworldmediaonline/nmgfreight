@@ -1,8 +1,7 @@
 "use client";
 
 import { useForm } from "@tanstack/react-form";
-import { zodValidator } from "@tanstack/zod-form-adapter";
-import { z } from "zod";
+import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import {
   Field,
@@ -37,11 +36,13 @@ export function ContactForm({ config, className }: ContactFormProps) {
       companyName: "",
       message: "",
     },
+    validators: {
+      onChange: contactFormSchema,
+    },
     onSubmit: async ({ value }) => {
       console.log("Form submitted:", value);
       // Handle form submission here
     },
-    validatorAdapter: zodValidator(),
   });
 
   return (
@@ -100,108 +101,136 @@ export function ContactForm({ config, className }: ContactFormProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
             {/* Left Column */}
             <div className="space-y-4 lg:space-y-5">
-              <form.Field name="name" validator={contactFormSchema.shape.name}>
-                {(field) => (
-                  <FieldGroup className="gap-2">
-                    <FieldLabel className="text-header-text-on-dark mb-1">
-                      Name <span className="text-header-orange">*</span>
-                    </FieldLabel>
-                    <Input
-                      value={field.state.value}
-                      onChange={(e) => field.handleChange(e.target.value)}
-                      onBlur={field.handleBlur}
-                      className="bg-white text-foreground"
-                    />
-                    <FieldError>{field.state.meta.errors}</FieldError>
-                  </FieldGroup>
-                )}
-              </form.Field>
+              <form.Field
+                name="name"
+                children={(field) => {
+                  const isInvalid =
+                    field.state.meta.isTouched && !field.state.meta.isValid;
+                  return (
+                    <Field data-invalid={isInvalid}>
+                      <FieldLabel className="text-header-text-on-dark mb-1">
+                        Name <span className="text-header-orange">*</span>
+                      </FieldLabel>
+                      <Input
+                        id={field.name}
+                        name={field.name}
+                        value={field.state.value}
+                        onChange={(e) => field.handleChange(e.target.value)}
+                        onBlur={field.handleBlur}
+                        aria-invalid={isInvalid}
+                        className="bg-white text-foreground"
+                      />
+                      {isInvalid && <FieldError errors={field.state.meta.errors} />}
+                    </Field>
+                  );
+                }}
+              />
 
               <form.Field
                 name="email"
-                validator={contactFormSchema.shape.email}
-              >
-                {(field) => (
-                  <FieldGroup className="gap-2">
-                    <FieldLabel className="text-header-text-on-dark mb-1">
-                      E-Mail <span className="text-header-orange">*</span>
-                    </FieldLabel>
-                    <Input
-                      type="email"
-                      value={field.state.value}
-                      onChange={(e) => field.handleChange(e.target.value)}
-                      onBlur={field.handleBlur}
-                      className="bg-white text-foreground"
-                    />
-                    <FieldError>{field.state.meta.errors}</FieldError>
-                  </FieldGroup>
-                )}
-              </form.Field>
+                children={(field) => {
+                  const isInvalid =
+                    field.state.meta.isTouched && !field.state.meta.isValid;
+                  return (
+                    <Field data-invalid={isInvalid}>
+                      <FieldLabel className="text-header-text-on-dark mb-1">
+                        E-Mail <span className="text-header-orange">*</span>
+                      </FieldLabel>
+                      <Input
+                        id={field.name}
+                        name={field.name}
+                        type="email"
+                        value={field.state.value}
+                        onChange={(e) => field.handleChange(e.target.value)}
+                        onBlur={field.handleBlur}
+                        aria-invalid={isInvalid}
+                        className="bg-white text-foreground"
+                      />
+                      {isInvalid && <FieldError errors={field.state.meta.errors} />}
+                    </Field>
+                  );
+                }}
+              />
 
               <form.Field
                 name="message"
-                validator={contactFormSchema.shape.message}
-              >
-                {(field) => (
-                  <FieldGroup className="gap-2">
-                    <FieldLabel className="text-header-text-on-dark mb-1">
-                      Text <span className="text-header-orange">*</span>
-                    </FieldLabel>
-                    <Textarea
-                      value={field.state.value}
-                      onChange={(e) => field.handleChange(e.target.value)}
-                      onBlur={field.handleBlur}
-                      className="bg-white text-foreground min-h-[150px] lg:min-h-[200px]"
-                      rows={8}
-                    />
-                    <FieldError>{field.state.meta.errors}</FieldError>
-                  </FieldGroup>
-                )}
-              </form.Field>
+                children={(field) => {
+                  const isInvalid =
+                    field.state.meta.isTouched && !field.state.meta.isValid;
+                  return (
+                    <Field data-invalid={isInvalid}>
+                      <FieldLabel className="text-header-text-on-dark mb-1">
+                        Text <span className="text-header-orange">*</span>
+                      </FieldLabel>
+                      <Textarea
+                        id={field.name}
+                        name={field.name}
+                        value={field.state.value}
+                        onChange={(e) => field.handleChange(e.target.value)}
+                        onBlur={field.handleBlur}
+                        aria-invalid={isInvalid}
+                        className="bg-white text-foreground min-h-[150px] lg:min-h-[200px]"
+                        rows={8}
+                      />
+                      {isInvalid && <FieldError errors={field.state.meta.errors} />}
+                    </Field>
+                  );
+                }}
+              />
             </div>
 
             {/* Right Column */}
             <div className="space-y-4 lg:space-y-5">
               <form.Field
                 name="phone"
-                validator={contactFormSchema.shape.phone}
-              >
-                {(field) => (
-                  <FieldGroup className="gap-2">
-                    <FieldLabel className="text-header-text-on-dark mb-1">
-                      Phone No <span className="text-header-orange">*</span>
-                    </FieldLabel>
-                    <Input
-                      type="tel"
-                      value={field.state.value}
-                      onChange={(e) => field.handleChange(e.target.value)}
-                      onBlur={field.handleBlur}
-                      className="bg-white text-foreground"
-                    />
-                    <FieldError>{field.state.meta.errors}</FieldError>
-                  </FieldGroup>
-                )}
-              </form.Field>
+                children={(field) => {
+                  const isInvalid =
+                    field.state.meta.isTouched && !field.state.meta.isValid;
+                  return (
+                    <Field data-invalid={isInvalid}>
+                      <FieldLabel className="text-header-text-on-dark mb-1">
+                        Phone No <span className="text-header-orange">*</span>
+                      </FieldLabel>
+                      <Input
+                        id={field.name}
+                        name={field.name}
+                        type="tel"
+                        value={field.state.value}
+                        onChange={(e) => field.handleChange(e.target.value)}
+                        onBlur={field.handleBlur}
+                        aria-invalid={isInvalid}
+                        className="bg-white text-foreground"
+                      />
+                      {isInvalid && <FieldError errors={field.state.meta.errors} />}
+                    </Field>
+                  );
+                }}
+              />
 
               <form.Field
                 name="companyName"
-                validator={contactFormSchema.shape.companyName}
-              >
-                {(field) => (
-                  <FieldGroup className="gap-2">
-                    <FieldLabel className="text-header-text-on-dark mb-1">
-                      Company Name <span className="text-header-orange">*</span>
-                    </FieldLabel>
-                    <Input
-                      value={field.state.value}
-                      onChange={(e) => field.handleChange(e.target.value)}
-                      onBlur={field.handleBlur}
-                      className="bg-white text-foreground"
-                    />
-                    <FieldError>{field.state.meta.errors}</FieldError>
-                  </FieldGroup>
-                )}
-              </form.Field>
+                children={(field) => {
+                  const isInvalid =
+                    field.state.meta.isTouched && !field.state.meta.isValid;
+                  return (
+                    <Field data-invalid={isInvalid}>
+                      <FieldLabel className="text-header-text-on-dark mb-1">
+                        Company Name <span className="text-header-orange">*</span>
+                      </FieldLabel>
+                      <Input
+                        id={field.name}
+                        name={field.name}
+                        value={field.state.value}
+                        onChange={(e) => field.handleChange(e.target.value)}
+                        onBlur={field.handleBlur}
+                        aria-invalid={isInvalid}
+                        className="bg-white text-foreground"
+                      />
+                      {isInvalid && <FieldError errors={field.state.meta.errors} />}
+                    </Field>
+                  );
+                }}
+              />
             </div>
           </div>
 

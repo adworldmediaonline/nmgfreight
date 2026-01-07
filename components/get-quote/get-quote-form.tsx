@@ -37,7 +37,7 @@ const getQuoteFormSchema = z.object({
   height: z.string().min(1, "Height is required"),
   width: z.string().min(1, "Width is required"),
   length: z.string().min(1, "Length is required"),
-  serviceOption: z.string().optional(),
+  serviceOption: z.string(),
 });
 
 export function GetQuoteForm({ config, className }: GetQuoteFormProps) {
