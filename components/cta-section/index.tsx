@@ -28,8 +28,13 @@ export function CtaSection({ config: userConfig, className }: CtaSectionProps) {
           {/* Background */}
           <CtaBackground />
 
+          {/* Phone Button - Top Right - Positioned to avoid overlap */}
+          <div className="absolute top-3 right-3 lg:top-6 lg:right-6 z-20">
+            <CtaButton button={config.button} />
+          </div>
+
           {/* Content */}
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center min-h-[300px] lg:min-h-[350px]">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center min-h-[300px] lg:min-h-[350px] pt-12 lg:pt-0">
             {/* Left Side - Text Content */}
             <div className="flex flex-col justify-center">
               <CtaContent config={config} />
@@ -39,11 +44,6 @@ export function CtaSection({ config: userConfig, className }: CtaSectionProps) {
             <div className="relative h-full flex items-end overflow-hidden">
               <CtaVisual />
             </div>
-          </div>
-
-          {/* Phone Button - Top Right */}
-          <div className="absolute top-4 lg:top-6 right-4 lg:right-6 z-20">
-            <CtaButton button={config.button} />
           </div>
         </div>
       </div>
