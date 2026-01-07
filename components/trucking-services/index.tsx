@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HeroSection } from "./hero-section";
 import { HowItWorks } from "./how-it-works";
 import { IndustriesServed } from "./industries-served";
@@ -28,11 +29,30 @@ export function TruckingServices({
 
   return (
     <div className={className}>
+      {/* Hero Image */}
+      <HeroImage />
       <HeroSection config={config.hero} contactBox={config.contactBox} />
       <HowItWorks config={config.howItWorks} />
       <IndustriesServed config={config.industries} />
       <WhyChoose config={config.whyChoose} />
     </div>
+  );
+}
+
+function HeroImage() {
+  return (
+    <section className="w-full">
+      <div className="relative w-full h-[300px] lg:h-[400px] xl:h-[500px]">
+        <Image
+          src="/images/trunc.png"
+          alt="NMG Freight Warehouse"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+      </div>
+    </section>
   );
 }
 
