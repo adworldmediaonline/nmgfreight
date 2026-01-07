@@ -1,6 +1,8 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
+import { GetQuote } from "@/components/get-quote";
+import { CtaSection } from "@/components/cta-section";
 
 export default function GetAQuote() {
   return (
@@ -15,8 +17,9 @@ export default function GetAQuote() {
           },
         }}
       />
-      <main className="container mx-auto px-4 py-12 lg:py-16 flex-1">
-        {/* Page content will go here */}
+      <main className="flex-1">
+        <GetQuote />
+        <CtaSection />
       </main>
       <Footer />
     </div>
