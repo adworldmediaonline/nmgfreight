@@ -5,7 +5,7 @@ import { IndustriesServed } from "./industries-served";
 import { WhyChoose } from "./why-choose";
 import type { WarehouseServicesConfig } from "./types";
 import { defaultWarehouseServicesConfig } from "./constants";
-
+import warehouseimg from '../../public/images/services/warehouse.webp'
 interface WarehouseServicesProps {
   config?: Partial<WarehouseServicesConfig>;
   className?: string;
@@ -42,11 +42,10 @@ export function WarehouseServices({
 function HeroImage() {
   return (
     <section className="w-full">
-      <div className="relative w-full h-[300px] lg:h-[400px] xl:h-[500px]">
+      <div className="relative overflow-hidden">
         <Image
-          src="/images/trunc.png"
+          src={warehouseimg}
           alt="NMG Freight Warehouse"
-          fill
           className="object-cover"
           priority
           sizes="100vw"

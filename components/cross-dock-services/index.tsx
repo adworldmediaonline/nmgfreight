@@ -6,6 +6,7 @@ import { WhyChoose } from "./why-choose";
 import type { CrossDockServicesConfig } from "./types";
 import { defaultCrossDockServicesConfig } from "./constants";
 
+import crossdockimg from '../../public/images/services/cross-dock.webp'
 interface CrossDockServicesProps {
   config?: Partial<CrossDockServicesConfig>;
   className?: string;
@@ -42,15 +43,16 @@ export function CrossDockServices({
 function HeroImage() {
   return (
     <section className="w-full">
-      <div className="relative w-full h-[300px] lg:h-[400px] xl:h-[500px]">
-        <Image
-          src="/images/trunc.png"
-          alt="NMG Freight Cross-Dock Facility"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
+      <div className="relative overflow-hidden">
+        <div className="relative w-full">
+          <Image
+            src={crossdockimg}
+            alt="NMG Freight Cross-Dock Facility"
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+        </div>
       </div>
     </section>
   );
