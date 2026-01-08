@@ -88,14 +88,14 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Custom header colors - Dark teal and vibrant orange */
-  --header-teal: oklch(0.32 0.07 195);
-  --hero-teal: oklch(0.28 0.07 195);
-  --header-orange: oklch(0.68 0.24 30);
-  --header-orange-dark: oklch(0.58 0.24 30);
-  --header-text-on-dark: oklch(1 0 0);
-  --header-text-on-light: oklch(0.145 0 0);
-  --header-bg-light: oklch(1 0 0);
+  /* Stunning Modern Palette - Deep Slate Blue, Electric Cyan, Vibrant Lime */
+  --header-teal: oklch(0.35 0.10 230); /* Deep Slate Blue - Modern & Professional */
+  --hero-teal: oklch(0.30 0.12 230); /* Rich Slate - Premium & Trustworthy */
+  --header-orange: oklch(0.70 0.18 150); /* Electric Cyan - Fresh & Dynamic */
+  --header-orange-dark: oklch(0.60 0.18 150); /* Deep Cyan - Bold Accent */
+  --header-text-on-dark: oklch(1 0 0); /* Pure White text */
+  --header-text-on-light: oklch(0.12 0 0); /* Deep Charcoal text */
+  --header-bg-light: oklch(0.99 0 0); /* Clean White background */
 }
 
 .dark {
