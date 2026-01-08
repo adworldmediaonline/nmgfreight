@@ -42,7 +42,7 @@ export function FeatureDetailBox({
       </div>
 
       {/* Embedded Image */}
-      {feature.imageSrc && (
+      {/* {feature.imageSrc && (
         <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 w-16 h-16 sm:w-24 sm:h-24 lg:w-36 lg:h-36 xl:w-44 xl:h-44 rounded-lg overflow-hidden shadow-lg">
           <Image
             src={feature.imageSrc}
@@ -52,7 +52,7 @@ export function FeatureDetailBox({
             sizes="(max-width: 640px) 64px, (max-width: 768px) 96px, (max-width: 1280px) 144px, 176px"
           />
         </div>
-      )}
+      )} */}
     </div>
   );
 }

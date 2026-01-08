@@ -6,6 +6,8 @@ import { AboutImage } from "./about-image";
 import type { AboutConfig } from "./types";
 import { defaultAboutConfig } from "./constants";
 
+import aboutimg from '../../public/images/service.png'
+
 interface AboutProps {
   config?: Partial<AboutConfig>;
   className?: string;
@@ -39,12 +41,12 @@ export function About({ config: userConfig, className }: AboutProps) {
           </div>
 
           {/* Right Side */}
-          <div className="flex flex-col gap-6 lg:gap-8">
+          <div className="flex flex-col gap-6 lg:gap-8 aspect-square">
             {/* Image */}
             <AboutImage
-              src="/images/service.png"
+              src={aboutimg}
               alt="NMG Freight Services"
-              className="w-full h-[300px] lg:h-[400px]"
+              className="object-cover"
             />
 
             {/* Stats Block */}

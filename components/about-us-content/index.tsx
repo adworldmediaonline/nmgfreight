@@ -1,5 +1,5 @@
 import { ContentSection } from "./content-section";
-import { TeamPhoto } from "./team-photo";
+// import { TeamPhoto } from "./team-photo";
 import type { AboutUsContentConfig } from "./types";
 import { defaultAboutUsContentConfig } from "./constants";
 
@@ -25,7 +25,7 @@ export function AboutUsContent({
       <ContentSection config={config} />
 
       {/* Team Photo Section */}
-      <TeamPhoto src={config.teamPhoto.src} alt={config.teamPhoto.alt} />
+      {/* <TeamPhoto src={config.teamPhoto.src} alt={config.teamPhoto.alt} /> */}
     </section>
   );
 }

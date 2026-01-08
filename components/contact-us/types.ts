@@ -3,8 +3,6 @@ export interface ContactCard {
   title: string;
   icon: "mail" | "phone" | "location";
   details: string | string[];
-  imageSrc: string;
-  imageAlt: string;
 }
 
 export interface ContactFormData {

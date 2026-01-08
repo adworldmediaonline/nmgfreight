@@ -13,7 +13,7 @@ export const defaultServicesConfig: ServicesConfig = {
       title: "Cross-Dock Services",
       description:
         "Streamlined cross-docking operations minimize handling time and storage costs. We efficiently transfer freight from inbound to outbound vehicles, reducing transit time and improving your supply chain speed.",
-      image: "/images/service.png",
+      image: "/images/services/cross-dock.webp",
       href: "/services/cross-dock",
     },
     {
@@ -21,7 +21,7 @@ export const defaultServicesConfig: ServicesConfig = {
       title: "Warehouse & Storage",
       description:
         "Secure warehousing facilities equipped with modern inventory management systems. We offer flexible storage solutions including pallet storage, racked systems, and bulk storage to accommodate various cargo types.",
-      image: "/images/service.png",
+      image: "/images/services/warehouse.webp",
       href: "/services/warehouse",
     },
     {
@@ -29,7 +29,7 @@ export const defaultServicesConfig: ServicesConfig = {
       title: "Trucking Services",
       description:
         "Nationwide trucking services with a reliable fleet of dry vans. We handle both full truckload (FTL) and less-than-truckload (LTL) shipments, ensuring timely and secure transportation across the country.",
-      image: "/images/service.png",
+      image: "/images/services/trucking.webp",
       href: "/services/trucking",
     },
   ],
