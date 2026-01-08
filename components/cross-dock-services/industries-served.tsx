@@ -17,24 +17,8 @@ export function IndustriesServed({
       <div className="container mx-auto px-4 lg:px-6">
         {/* Truck Images */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mb-8 lg:mb-10">
-          <div className="relative w-full h-[200px] lg:h-[250px] rounded-xl overflow-hidden">
-            <Image
-              src="/images/plane.png"
-              alt="Truck on coastal highway"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative w-full h-[200px] lg:h-[250px] rounded-xl overflow-hidden">
-            <Image
-              src="/images/logi.png"
-              alt="Truck in tunnel"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+
+
         </div>
 
         {/* Industries List */}

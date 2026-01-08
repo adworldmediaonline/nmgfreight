@@ -23,18 +23,7 @@ export function WhyChoose({ config, className }: WhyChooseProps) {
             </p>
           </div>
 
-          {/* Team Image */}
-          <div className="mb-6 lg:mb-8">
-            <div className="relative w-full h-[200px] lg:h-[300px] xl:h-[350px] rounded-xl overflow-hidden">
-              <Image
-                src="/images/service.png"
-                alt="NMG Freight Cross-Dock Team"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 1200px"
-              />
-            </div>
-          </div>
+
 
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-4">

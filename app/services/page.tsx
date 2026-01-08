@@ -1,29 +1,27 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
-import { WarehouseServices } from "@/components/warehouse-services";
+import { Services } from "@/components/services";
 import { CtaSection } from "@/components/cta-section";
 
-
-export default function WarehouseStorage() {
+export default function ServicesPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header className="sticky top-0 z-50 w-full" />
       <PageHeader
         config={{
-          title: "Warehouse & Storage",
+          title: "Services",
           breadcrumb: {
             home: "HOME",
-            current: "WAREHOUSE & STORAGE",
+            current: "SERVICES",
           },
         }}
       />
       <main className="flex-1">
-        <WarehouseServices />
+        <Services />
         <CtaSection />
       </main>
       <Footer />
     </div>
   );
 }
-
