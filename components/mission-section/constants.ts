@@ -2,20 +2,20 @@ import type { MissionSectionConfig } from "./types";
 
 export const defaultMissionSectionConfig: MissionSectionConfig = {
   label: "Our Mission",
-  heading: "Driving the Future of Smart Transportation",
+  heading: "Delivering Excellence in Every Shipment",
   description:
-    "We aim to deliver innovative, reliable, and cost-effective logistics solutions. Every mile we move is powered by technology, safety, and dedication.",
+    "Our mission is to provide reliable, efficient, and cost-effective freight solutions that empower businesses to succeed. We are committed to maintaining the highest standards of service quality, safety, and customer satisfaction in everything we do.",
   serviceDetails: [
     {
-      text: "Service area: Greater Chicago and Midwest",
+      text: "Committed to on-time delivery and cargo safety",
     },
     {
-      text: "Proudly serving retail, food, packaging, and industrial freight needs",
+      text: "Serving diverse industries with customized logistics solutions",
     },
   ],
   visual: {
-    imageSrc: "/images/service.png", // Placeholder - replace with actual team image
-    imageAlt: "Our Team",
+    imageSrc: "/images/service.png",
+    imageAlt: "NMG Freight Mission",
   },
 };
 

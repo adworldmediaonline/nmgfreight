@@ -153,7 +153,7 @@ export default function TermsConditions() {
                       <strong>Phone:</strong> (630)-544-1019
                     </p>
                     <p>
-                      <strong>Address:</strong> 900 Paramount Pkwy, Batavia, IL 60510
+                      <strong>Address:</strong> 900 Paramount Pkwy, 60510
                     </p>
                   </div>
                 </div>

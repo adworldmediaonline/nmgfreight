@@ -10,7 +10,7 @@ export const defaultHeaderConfig: HeaderConfig = {
   ],
   contactInfo: {
     email: "info@nmgfreight.com",
-    address: "900 Paramount Pkwy, Batavia, IL 60510",
+    address: "900 Paramount Pkwy, 60510",
     phone: "(630)-544-1019",
   },
   socialLinks: [

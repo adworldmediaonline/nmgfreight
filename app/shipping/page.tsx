@@ -166,7 +166,7 @@ export default function Shipping() {
                       <strong>Phone:</strong> (630)-544-1019
                     </p>
                     <p>
-                      <strong>Address:</strong> 900 Paramount Pkwy, Batavia, IL 60510
+                      <strong>Address:</strong> 900 Paramount Pkwy, 60510
                     </p>
                     <p className="mt-4">
                       <strong>Business Hours:</strong> Monday - Friday, 8:00 AM - 6:00 PM CST

@@ -4,7 +4,7 @@ export const defaultTruckingServicesConfig: TruckingServicesConfig = {
   hero: {
     title: "Professional Trucking Services for Reliable Freight Transportation",
     description:
-      "At NMG Freight, our trucking solutions provide efficient and dependable transportation services across the nation. We ensure timely delivery and cargo safety with our experienced team and modern fleet.",
+      "NMG Freight delivers dependable trucking solutions designed to meet your transportation needs. Our experienced team and well-maintained fleet ensure your cargo arrives safely and on time, every time.",
   },
   contactBox: {
     label: "Services",
@@ -13,32 +13,32 @@ export const defaultTruckingServicesConfig: TruckingServicesConfig = {
   },
   howItWorks: {
     heading: "How It Works",
-    description: "Our trucking process is built for reliability and efficiency:",
+    description: "Our streamlined trucking process ensures efficient and reliable service:",
     steps: [
       {
         title: "Request a Quote",
         description:
-          "Share your freight details and get a competitive quote tailored to your needs.",
+          "Contact us with your shipping requirements and receive a detailed quote that fits your budget and timeline.",
       },
       {
         title: "Schedule Pickup",
         description:
-          "Coordinate pickup times that work best for your schedule with our flexible scheduling.",
+          "We coordinate convenient pickup times that align with your schedule, ensuring minimal disruption to your operations.",
       },
       {
         title: "Secure Transport",
         description:
-          "Your cargo is loaded and transported safely by our experienced drivers using modern equipment.",
+          "Your freight is carefully loaded and transported by professional drivers using modern, reliable equipment designed for cargo protection.",
       },
       {
         title: "Real-Time Tracking",
         description:
-          "Monitor your shipment's progress with our advanced tracking system throughout the journey.",
+          "Monitor your shipment's journey with our advanced tracking technology, providing complete visibility from pickup to delivery.",
       },
       {
         title: "On-Time Delivery",
         description:
-          "Receive your freight at the destination on schedule, ensuring your supply chain stays on track.",
+          "We deliver your freight on schedule, maintaining the integrity of your supply chain and meeting your business deadlines.",
       },
     ],
   },
@@ -48,58 +48,58 @@ export const defaultTruckingServicesConfig: TruckingServicesConfig = {
       {
         title: "Automotive",
         description:
-          "Rapid delivery of parts to avoid costly production delays.",
+          "Timely delivery of automotive parts and components to support production schedules and minimize downtime.",
       },
       {
         title: "Healthcare & Medical Supplies",
         description:
-          "Safe, temperature-controlled transport for critical medical equipment and pharmaceuticals.",
+          "Specialized handling and temperature-controlled transportation for sensitive medical equipment and pharmaceutical products.",
       },
       {
         title: "Retail & E-Commerce",
         description:
-          "Reliable delivery to ensure shelves are stocked and customer expectations are met.",
+          "Efficient distribution services that keep retail shelves stocked and meet e-commerce delivery commitments.",
       },
       {
         title: "Manufacturing",
         description:
-          "Quick shipment of raw materials and components to maintain production schedules.",
+          "Reliable transportation of raw materials and components to maintain continuous production operations.",
       },
       {
         title: "Technology & Electronics",
         description:
-          "Secure and fast transport for high-value equipment and components.",
+          "Secure handling and transport of high-value electronic equipment with specialized packaging and care.",
       },
     ],
   },
   whyChoose: {
     heading: "Why Choose Our Trucking Services?",
     description:
-      "With our experienced drivers, modern fleet, and commitment to excellence, NMG Freight ensures reliable transportation, on-time delivery, and cargo safety—keeping your supply chain moving smoothly.",
+      "NMG Freight combines professional expertise, modern equipment, and customer-focused service to deliver exceptional trucking solutions that keep your business moving forward.",
     features: [
       {
         number: 1,
         title: "Nationwide Coverage",
         description:
-          "Our extensive network enables seamless delivery across the United States, ensuring your freight reaches its destination without delays.",
+          "Our extensive network ensures seamless delivery across all regions, connecting your business with markets everywhere.",
       },
       {
         number: 2,
-        title: "Experienced Owner-Operators",
+        title: "Experienced Drivers",
         description:
-          "Our skilled and dedicated drivers prioritize the safety of your cargo and ensure consistent on-time deliveries.",
+          "Our professional drivers are trained in safety protocols and cargo handling, ensuring your freight arrives in perfect condition.",
       },
       {
         number: 3,
         title: "Dry-Van Specialists",
         description:
-          "We specialize in secure and efficient dry-van transportation for a wide range of freight, maintaining excellent handling standards.",
+          "We specialize in dry-van transportation, providing secure and efficient shipping solutions for various types of freight.",
       },
       {
         number: 4,
         title: "Real-Time Tracking & Support",
         description:
-          "Stay informed with real-time shipment updates and 24/7 customer support to address all your transportation needs.",
+          "Stay connected with real-time shipment updates and responsive customer support throughout the entire transportation process.",
       },
     ],
   },

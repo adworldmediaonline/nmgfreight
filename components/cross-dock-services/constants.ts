@@ -4,7 +4,7 @@ export const defaultCrossDockServicesConfig: CrossDockServicesConfig = {
   hero: {
     title: "Fast & Streamlined Cross-Dock Services for Smarter Freight Handling",
     description:
-      "At NMG Freight, our cross-docking solutions help minimize storage time and maximize supply chain efficiency. We facilitate fast inbound and outbound transfers, reducing delays and keeping your freight moving without interruption.",
+      "NMG Freight's cross-docking solutions optimize your supply chain by minimizing storage time and maximizing efficiency. Our streamlined process enables rapid inbound-to-outbound transfers, reducing handling costs and accelerating delivery times.",
   },
   contactBox: {
     heading: "Need Help? Call Us now",
@@ -12,32 +12,32 @@ export const defaultCrossDockServicesConfig: CrossDockServicesConfig = {
   },
   howItWorks: {
     heading: "How It Works",
-    description: "Our cross-dock process is built for speed and simplicity:",
+    description: "Our cross-dock process is designed for speed and efficiency:",
     steps: [
       {
         title: "Request a Service",
         description:
-          "Share your freight needs and get a quick turnaround estimate.",
+          "Contact us with your cross-docking requirements and receive a detailed service estimate and timeline.",
       },
       {
         title: "Arrival Coordination",
         description:
-          "Schedule inbound freight with precise timing to minimize wait time.",
+          "We coordinate precise arrival schedules for inbound freight to minimize waiting time and optimize dock utilization.",
       },
       {
         title: "Unload & Reprocess",
         description:
-          "We rewrap, restack, sort, and stage your goods for immediate outbound delivery.",
+          "Our team efficiently unloads, sorts, repackages, and stages your goods for immediate outbound shipment preparation.",
       },
       {
         title: "Quick Turnaround",
         description:
-          "Enjoy same-day service to reduce detention time and boost efficiency.",
+          "Benefit from same-day processing capabilities that reduce detention costs and improve overall supply chain speed.",
       },
       {
         title: "Final Transfer",
         description:
-          "Your freight is loaded and shipped out swiftly to its next destination.",
+          "Your freight is promptly loaded onto outbound vehicles and dispatched to its final destination without delay.",
       },
     ],
   },
@@ -47,58 +47,58 @@ export const defaultCrossDockServicesConfig: CrossDockServicesConfig = {
       {
         title: "Automotive",
         description:
-          "Rapid delivery of parts to avoid costly production delays.",
+          "Efficient cross-docking of automotive parts and components to support just-in-time manufacturing requirements.",
       },
       {
         title: "Healthcare & Medical Supplies",
         description:
-          "Safe, temperature-controlled transport for critical medical equipment and pharmaceuticals.",
+          "Careful handling and rapid transfer of temperature-sensitive medical equipment and pharmaceutical products.",
       },
       {
         title: "Retail & E-Commerce",
         description:
-          "Reliable delivery to ensure shelves are stocked and customer expectations are met.",
+          "Fast order consolidation and distribution services that keep retail inventory flowing and meet e-commerce delivery promises.",
       },
       {
         title: "Manufacturing",
         description:
-          "Quick shipment of raw materials and components to maintain production schedules.",
+          "Quick transfer of materials and components to maintain production schedules and reduce inventory holding costs.",
       },
       {
         title: "Technology & Electronics",
         description:
-          "Secure and fast transport for high-value equipment and components.",
+          "Secure and efficient handling of high-value electronic products with specialized care during cross-dock operations.",
       },
     ],
   },
   whyChoose: {
     heading: "Why Choose Our Cross-Dock Services?",
     description:
-      "With our efficient cross-docking operations and skilled team, NMG Freight ensures fast transfers, reduced dwell time, and on-time outbound shipments—keeping your supply chain moving smoothly.",
+      "NMG Freight's cross-docking expertise combines operational efficiency with skilled execution to deliver fast transfers, minimize dwell time, and ensure timely outbound shipments that keep your supply chain operating at peak performance.",
     features: [
       {
         number: 1,
         title: "Nationwide Coverage",
         description:
-          "Our extensive network enables seamless delivery across the United States, ensuring your freight reaches its destination without delays.",
+          "Our extensive network enables seamless cross-dock operations across all regions, ensuring your freight moves efficiently to any destination.",
       },
       {
         number: 2,
-        title: "Experienced Owner-Operators",
+        title: "Experienced Operations Team",
         description:
-          "Our skilled and dedicated drivers prioritize the safety of your cargo and ensure consistent on-time deliveries.",
+          "Our skilled warehouse and logistics professionals are trained in efficient cross-dock procedures, ensuring accurate and rapid freight handling.",
       },
       {
         number: 3,
         title: "Dry-Van Specialists",
         description:
-          "We specialize in secure and efficient dry-van transportation for a wide range of freight, maintaining excellent handling standards.",
+          "We specialize in dry-van cross-docking operations, providing secure and efficient transfer services for various types of freight.",
       },
       {
         number: 4,
         title: "Real-Time Tracking & Support",
         description:
-          "Stay informed with real-time shipment updates and 24/7 customer support to address all your transportation needs.",
+          "Complete visibility into your cross-dock operations with real-time updates and dedicated support throughout the process.",
       },
     ],
   },
