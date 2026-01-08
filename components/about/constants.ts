@@ -3,32 +3,32 @@ import type { AboutConfig } from "./types";
 export const defaultAboutConfig: AboutConfig = {
   header: {
     label: "ABOUT NMG FREIGHT",
-    headline: "We'll keep your items damage free",
+    headline: "Your Trusted Partner for Freight Excellence",
     description:
-      "With over 20 years of experience, NMG Freight is a dedicated asset-based trucking company committed to providing customized transportation and logistics services. Our modern fleet and expert team ensure timely and secure deliveries across multiple regions.",
+      "NMG Freight delivers comprehensive logistics solutions with precision and care. Our experienced team handles every shipment with attention to detail, ensuring your cargo arrives safely and on time. We combine industry expertise with modern technology to provide seamless transportation and warehousing services.",
   },
   services: [
-    { label: "Intermodal Shipping" },
-    { label: "Freeze product Shipping" },
-    { label: "Hot Shot Trucking" },
-    { label: "Container Freight" },
-    { label: "International Shipping" },
-    { label: "Flatbed Shipping" },
+    { label: "Full Truckload Services" },
+    { label: "Less Than Truckload (LTL)" },
+    { label: "Dry Van Transportation" },
+    { label: "Temperature-Controlled Shipping" },
+    { label: "Expedited Delivery" },
+    { label: "Dedicated Fleet Solutions" },
   ],
   contact: {
     buttonLabel: "Contact Us",
-    buttonHref: "/contact",
+    buttonHref: "/contact-us",
     phoneLabel: "Have Questions?",
     phoneNumber: "(630)-544-1019",
   },
   stats: {
     experience: {
-      years: "20",
-      label: "Years of Experience",
+      years: "15+",
+      label: "Years of Excellence",
     },
     operations: {
-      count: "10",
-      label: "Country Operation",
+      count: "50+",
+      label: "Locations Served",
     },
   },
 };

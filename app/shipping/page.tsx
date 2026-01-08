@@ -22,7 +22,7 @@ export default function Shipping() {
               <div className="space-y-8">
                 <div>
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-6">
-                    At NMG Freight, we provide reliable and efficient shipping services across the United States. This page outlines our shipping policies, procedures, and what you can expect when working with us.
+                    At NMG Freight, we provide reliable and efficient shipping services nationwide. This page outlines our shipping policies, procedures, and what you can expect when working with us.
                   </p>
                 </div>
 
@@ -36,7 +36,7 @@ export default function Shipping() {
                   <ul className="list-disc list-inside space-y-2 text-base text-muted-foreground ml-4">
                     <li>Full Truckload (FTL) and Less Than Truckload (LTL) services</li>
                     <li>Expedited and standard shipping options</li>
-                    <li>Nationwide coverage across all 50 states</li>
+                    <li>Nationwide coverage</li>
                     <li>Specialized handling for fragile, hazardous, or oversized cargo</li>
                     <li>Cross-docking and warehousing services</li>
                   </ul>
@@ -92,7 +92,7 @@ export default function Shipping() {
                   <ul className="list-disc list-inside space-y-2 text-base text-muted-foreground ml-4">
                     <li><strong>Local/Regional:</strong> 1-2 business days</li>
                     <li><strong>Regional:</strong> 2-4 business days</li>
-                    <li><strong>Cross-Country:</strong> 5-7 business days</li>
+                    <li><strong>Long Distance:</strong> 5-7 business days</li>
                     <li><strong>Expedited:</strong> Available upon request with faster delivery options</li>
                   </ul>
                 </div>
@@ -166,7 +166,7 @@ export default function Shipping() {
                       <strong>Phone:</strong> (630)-544-1019
                     </p>
                     <p>
-                      <strong>Address:</strong> 900 Paramount Pkwy, Batavia, IL 60510
+                      <strong>Address:</strong> 900 Paramount Pkwy, 60510
                     </p>
                     <p className="mt-4">
                       <strong>Business Hours:</strong> Monday - Friday, 8:00 AM - 6:00 PM CST

@@ -3,34 +3,34 @@ import type { FaqConfig } from "./types";
 export const defaultFaqConfig: FaqConfig = {
   header: {
     label: "FREQUENTLY ASKED QUESTIONS",
-    title: "Do you have any question? Find answer here",
+    title: "Common Questions About Our Services",
     description:
-      "Got questions? We've got answers! Explore our FAQs to learn more about our services, delivery process, and support.",
+      "Find answers to frequently asked questions about our freight, warehousing, and logistics services. Can't find what you're looking for? Contact us directly.",
   },
   items: [
     {
       id: "services",
-      question: "What services does Warrior Trucking offer?",
+      question: "What types of freight services does NMG Freight provide?",
       answer:
-        "We specialize in freight transportation, logistics solutions, and supply chain management, including intermodal, flatbed, and container freight.",
+        "NMG Freight offers comprehensive freight solutions including full truckload (FTL) and less-than-truckload (LTL) services, dry van transportation, cross-docking, and warehousing. We serve businesses across various industries with reliable nationwide coverage.",
     },
     {
       id: "deliveries",
-      question: "How do you ensure on-time deliveries?",
+      question: "How does NMG Freight ensure timely deliveries?",
       answer:
-        "We use advanced tracking systems, maintain a reliable fleet, and work with experienced drivers to ensure timely deliveries. Our real-time monitoring allows us to proactively address any potential delays.",
+        "We maintain a reliable fleet, work with experienced drivers, and utilize advanced tracking technology to monitor shipments in real-time. Our operations team proactively manages routes and addresses potential delays to ensure on-time delivery.",
     },
     {
-      id: "brokerage",
-      question: "Do you provide freight brokerage services?",
+      id: "coverage",
+      question: "What geographic areas do you serve?",
       answer:
-        "Yes, we offer comprehensive freight brokerage services, connecting shippers with reliable carriers to optimize your logistics operations and reduce costs.",
+        "NMG Freight provides comprehensive nationwide coverage. Our extensive network allows us to handle shipments to and from locations across the country, ensuring reliable logistics solutions for your business.",
     },
     {
       id: "support",
-      question: "Is customer support available 24/7?",
+      question: "What customer support options are available?",
       answer:
-        "Absolutely! Our customer support team is available 24/7 to assist you with any questions, concerns, or urgent shipping needs. You can reach us via phone, email, or our online chat.",
+        "Our customer service team is available during business hours to assist with quotes, tracking, and general inquiries. For urgent matters, we provide emergency contact options. You can reach us via phone, email, or through our online contact form.",
     },
   ],
 };

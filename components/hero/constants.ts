@@ -1,13 +1,13 @@
 import type { HeroConfig } from "./types";
 
 export const defaultHeroConfig: HeroConfig = {
-  brandLabel: "NMG Freight",
-  headline: "Your Logistics Partner In Chicagoland",
+  brandLabel: "NMG FREIGHT",
+  headline: "Reliable Freight Solutions Nationwide",
   description:
-    "Efficient solutions for Trucking, Warehousing, Cross-Dock and Storage management, ensuring fast, reliable and professional service.",
+    "Professional trucking, warehousing, and cross-dock services designed to streamline your supply chain. Experience efficient logistics with our dedicated team and modern fleet.",
   ctaButton: {
     label: "Get A Quote",
-    href: "/quote",
+    href: "/get-a-quote",
   },
 };
 
