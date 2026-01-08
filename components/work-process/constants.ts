@@ -3,30 +3,30 @@ import type { WorkProcessConfig } from "./types";
 export const defaultWorkProcessConfig: WorkProcessConfig = {
   header: {
     label: "OUR WORK PROCESS",
-    title: "We always follow the best ways of logistics",
+    title: "Streamlined Logistics from Start to Finish",
     description:
-      "At Warrior Trucking, we ensure efficient, cost-effective, and secure deliveries with a seamless, expert-driven process.",
+      "Our proven process ensures efficient, reliable, and cost-effective freight solutions. From initial consultation to final delivery, we handle every step with precision and care.",
   },
   steps: [
     {
       number: 1,
-      title: "Step 1: Plan & Optimize",
+      title: "Consultation & Planning",
       description:
-        "We assess your shipping needs, design tailored logistics solutions, and optimize routes for maximum efficiency.",
+        "We begin by understanding your specific shipping requirements, timelines, and budget. Our team analyzes your needs and recommends the most efficient logistics solution tailored to your business.",
       image: "/images/service.png",
     },
     {
       number: 2,
-      title: "Step 2: Execute & Monitor",
+      title: "Coordination & Execution",
       description:
-        "Our dedicated fleet and freight brokerage network ensure seamless transportation, while real-time tracking keeps you informed.",
+        "Once approved, we coordinate pickup, assign the appropriate equipment, and begin transportation. Real-time tracking keeps you updated throughout the journey, ensuring complete visibility.",
       image: "/images/service.png",
     },
     {
       number: 3,
-      title: "Step 3: Deliver & Support",
+      title: "Delivery & Follow-Up",
       description:
-        "We guarantee safe, on-time deliveries with 24/7 customer support, ensuring smooth operations and customer satisfaction.",
+        "We ensure safe and timely delivery to your destination. After completion, we follow up to confirm satisfaction and gather feedback to continuously improve our services.",
       image: "/images/service.png",
     },
   ],

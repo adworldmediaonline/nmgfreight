@@ -3,16 +3,16 @@ import type { ServicesConfig } from "./types";
 export const defaultServicesConfig: ServicesConfig = {
   header: {
     label: "OUR SERVICES",
-    title: "Wide Variety of Logistics Services",
+    title: "Comprehensive Freight & Logistics Solutions",
     description:
-      "Explore a wide range of freight, logistics, and warehousing solutions tailored to meet your business needs, ensuring reliable and on-time deliveries.",
+      "From trucking and warehousing to cross-docking, we provide end-to-end logistics services that keep your supply chain moving efficiently and cost-effectively.",
   },
   services: [
     {
       icon: "cross-dock",
       title: "Cross-Dock Services",
       description:
-        "Our cross-dock services handle fast inbound and outbound transfers with minimal storage time, reducing costs and improving efficiency.",
+        "Streamlined cross-docking operations minimize handling time and storage costs. We efficiently transfer freight from inbound to outbound vehicles, reducing transit time and improving your supply chain speed.",
       image: "/images/service.png",
       href: "/services/cross-dock",
     },
@@ -20,7 +20,7 @@ export const defaultServicesConfig: ServicesConfig = {
       icon: "warehouse",
       title: "Warehouse & Storage",
       description:
-        "We offer secure short- and long-term storage with pallet, racked, and bulk storage options to meet your inventory needs.",
+        "Secure warehousing facilities equipped with modern inventory management systems. We offer flexible storage solutions including pallet storage, racked systems, and bulk storage to accommodate various cargo types.",
       image: "/images/service.png",
       href: "/services/warehouse",
     },
@@ -28,7 +28,7 @@ export const defaultServicesConfig: ServicesConfig = {
       icon: "trucking",
       title: "Trucking Services",
       description:
-        "Our trucking services include full truckload and local deliveries using modern fleet ensuring timely and safe transportation.",
+        "Nationwide trucking services with a reliable fleet of dry vans. We handle both full truckload (FTL) and less-than-truckload (LTL) shipments, ensuring timely and secure transportation across the country.",
       image: "/images/service.png",
       href: "/services/trucking",
     },

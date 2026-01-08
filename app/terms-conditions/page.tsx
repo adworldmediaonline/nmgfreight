@@ -125,7 +125,7 @@ export default function TermsConditions() {
                     9. Governing Law
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    These Terms and Conditions shall be governed by and construed in accordance with the laws of the State of Illinois, United States, without regard to its conflict of law provisions.
+                    These Terms and Conditions shall be governed by and construed in accordance with applicable local laws, without regard to conflict of law provisions.
                   </p>
                 </div>
 

@@ -4,23 +4,23 @@ export const defaultStatsConfig: StatsConfig = {
   items: [
     {
       iconName: "package",
-      value: "300,000+",
-      label: "Shipments Delivered",
+      value: "50,000+",
+      label: "Successful Shipments",
     },
     {
       iconName: "clock",
-      value: "98%",
-      label: "On-Time Delivery",
+      value: "99%",
+      label: "On-Time Delivery Rate",
     },
     {
       iconName: "globe",
-      value: "2020",
-      label: "Active Since",
+      value: "50+",
+      label: "Locations Served",
     },
     {
       iconName: "handshake",
-      value: "200+",
-      label: "Trusted Partnerships",
+      value: "500+",
+      label: "Satisfied Clients",
     },
   ],
 };

@@ -3,28 +3,28 @@ import type { WhyChooseUsConfig } from "./types";
 export const defaultWhyChooseUsConfig: WhyChooseUsConfig = {
   header: {
     label: "WHY CHOOSE US",
-    title: "Why we are considered the best in business",
+    title: "Excellence in Every Shipment",
     description:
-      "NMG Freight specializes in reliable, cost-effective transportation and logistics solutions. With a modern fleet and extensive network, we ensure seamless deliveries and supply chain efficiency.",
+      "NMG Freight stands out through our commitment to reliability, customer service, and operational excellence. We combine industry expertise with modern technology to deliver superior logistics solutions.",
   },
   features: [
     {
       icon: "trucking",
-      title: "A Dedicated Asset-Based Trucking Company",
+      title: "Proven Track Record",
       description:
-        "We provide reliable, customized transportation solutions with a fleet of 15+ trucks, ensuring timely and consistent deliveries.",
+        "Years of experience delivering freight safely and on time. Our consistent performance and reliability have earned the trust of businesses across multiple industries.",
     },
     {
       icon: "brokerage",
-      title: "Leading Freight Brokerage",
+      title: "Nationwide Coverage",
       description:
-        "Our extensive network connects shippers with trusted carriers for seamless and cost-effective freight solutions.",
+        "Extensive network ensuring your shipments reach their destination efficiently regardless of location. We connect you with reliable carriers nationwide.",
     },
     {
       icon: "logistics",
-      title: "Comprehensive Logistics Services",
+      title: "Customer-Focused Approach",
       description:
-        "From intermodal shipping to flatbed and expedited services, we offer end-to-end logistics tailored to your needs.",
+        "Every shipment matters. We provide personalized service, real-time tracking, and dedicated support to ensure your logistics operations run smoothly and efficiently.",
     },
   ],
 };
