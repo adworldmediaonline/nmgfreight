@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { ContactCard as ContactCardType } from "./types";
@@ -24,17 +23,6 @@ export function ContactCard({ card, className }: ContactCardProps) {
         className
       )}
     >
-      {/* Image */}
-      <div className="relative w-full h-[200px] lg:h-[250px]">
-        <Image
-          src={card.imageSrc}
-          alt={card.imageAlt}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 33vw, 400px"
-        />
-      </div>
-
       {/* Content */}
       <div className="p-6 lg:p-8 flex-1 flex flex-col items-center text-center">
         {/* Icon */}
