@@ -6,7 +6,7 @@ export const defaultQuoteTestimonialConfig: QuoteTestimonialConfig = {
     personalInfoLabel: "Personal Information",
     freightTypeLabel: "Freight Type",
     buttonLabel: "Get A Quote",
-    phoneNumber: "(630)-544-1019",
+    phoneNumber: "+1 3313286900",
     supportText: "The Support Centre Is Available 24/7",
     incotermsOptions: [
       { value: "exw", label: "EXW - Ex Works" },

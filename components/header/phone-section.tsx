@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PhoneIcon } from "lucide-react";
 import type { ContactInfo } from "./types";
 
@@ -7,9 +8,11 @@ interface PhoneSectionProps {
 }
 
 export function PhoneSection({ contactInfo, className }: PhoneSectionProps) {
+  const phoneHref = `tel:${contactInfo.phone.replace(/[^0-9+]/g, "")}`;
+
   return (
     <div className={className}>
-      <div className="flex items-center gap-3">
+      <Link href={phoneHref} className="flex items-center gap-3 hover:opacity-80 transition-opacity">
         <div className="relative">
           <div className="w-12 h-12 rounded-full bg-header-orange flex items-center justify-center border-2 border-header-teal/30 shadow-lg">
             <PhoneIcon className="h-5 w-5 text-header-text-on-dark" />
@@ -23,7 +26,7 @@ export function PhoneSection({ contactInfo, className }: PhoneSectionProps) {
             {contactInfo.phone}
           </span>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

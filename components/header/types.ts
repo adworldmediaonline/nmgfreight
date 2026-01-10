@@ -23,6 +23,7 @@ export interface HeaderConfig {
   logo: {
     brandName: string;
     href?: string;
+    imageSrc?: string;
   };
 }
 

@@ -150,10 +150,10 @@ export default function TermsConditions() {
                       <strong>Email:</strong> info@nmgfreight.com
                     </p>
                     <p>
-                      <strong>Phone:</strong> (630)-544-1019
+                      <strong>Phone:</strong> +1 3313286900
                     </p>
                     <p>
-                      <strong>Address:</strong> 900 Paramount Pkwy, 60510
+                      <strong>Address:</strong> 3519 MATAPAN CRES VANCOUVER BC V5M 4A9 CANADA
                     </p>
                   </div>
                 </div>

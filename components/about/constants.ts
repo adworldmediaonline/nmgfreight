@@ -19,7 +19,7 @@ export const defaultAboutConfig: AboutConfig = {
     buttonLabel: "Contact Us",
     buttonHref: "/contact-us",
     phoneLabel: "Have Questions?",
-    phoneNumber: "(630)-544-1019",
+    phoneNumber: "+1 3313286900",
   },
   stats: {
     experience: {

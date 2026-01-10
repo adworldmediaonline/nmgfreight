@@ -47,6 +47,7 @@ export function MobileMenu({
             <Logo
               brandName={config.logo.brandName}
               variant="menu"
+              imageSrc={config.logo.imageSrc}
             />
           </div>
 
@@ -64,10 +65,13 @@ export function MobileMenu({
                 Contact Info
               </h3>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
+                <a
+                  href={`tel:${config.contactInfo.phone.replace(/[^0-9+]/g, "")}`}
+                  className="flex items-center gap-2 hover:text-foreground transition-colors"
+                >
                   <PhoneIcon className="h-4 w-4" />
                   <span>{config.contactInfo.phone}</span>
-                </div>
+                </a>
                 <div className="flex items-center gap-2">
                   <MapPinIcon className="h-4 w-4" />
                   <span>{config.contactInfo.address}</span>

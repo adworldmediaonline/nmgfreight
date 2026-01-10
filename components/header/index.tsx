@@ -48,6 +48,7 @@ export function Header({ config: userConfig, className }: HeaderProps) {
             <Logo
               brandName={config.logo.brandName}
               href={config.logo.href}
+              imageSrc={config.logo.imageSrc}
             />
 
             {/* Desktop Navigation Links */}

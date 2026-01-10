@@ -39,8 +39,8 @@ export const defaultFooterConfig: FooterConfig = {
   ],
   contactInfo: {
     email: "info@nmgfreight.com",
-    phone: ["(630)-544-1019", "(630)-943-2246"],
-    address: "900 Paramount Pkwy, 60510",
+    phone: ["+1 3313286900"],
+    address: "3519 MATAPAN CRES VANCOUVER BC V5M 4A9 CANADA",
   },
   copyright: "© 2025 NMG Freight / All rights reserved",
 };
