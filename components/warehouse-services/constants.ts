@@ -9,7 +9,7 @@ export const defaultWarehouseServicesConfig: WarehouseServicesConfig = {
   contactBox: {
     label: "Services",
     heading: "Need Help? Call Us now",
-    phoneNumber: "(630)-544-1019",
+    phoneNumber: "+1 3313286900",
   },
   howItWorks: {
     heading: "How It Works",

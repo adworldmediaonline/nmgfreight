@@ -10,8 +10,8 @@ export const defaultHeaderConfig: HeaderConfig = {
   ],
   contactInfo: {
     email: "info@nmgfreight.com",
-    address: "900 Paramount Pkwy, 60510",
-    phone: "(630)-544-1019",
+    address: "3519 MATAPAN CRES VANCOUVER BC V5M 4A9 CANADA",
+    phone: "+1 3313286900",
   },
   socialLinks: [
     {
@@ -28,6 +28,7 @@ export const defaultHeaderConfig: HeaderConfig = {
   logo: {
     brandName: "NMG FREIGHT",
     href: "/",
+    imageSrc: "/nmg-freight.png",
   },
 };
 

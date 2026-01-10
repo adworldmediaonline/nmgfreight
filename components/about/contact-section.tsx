@@ -25,7 +25,10 @@ export function ContactSection({ contact, className }: ContactSectionProps) {
       </Link>
 
       {/* Phone Number */}
-      <div className="flex items-center gap-3">
+      <Link
+        href={`tel:${contact.phoneNumber.replace(/[^0-9+]/g, "")}`}
+        className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+      >
         <div className="w-12 h-12 rounded-full bg-header-orange/20 flex items-center justify-center">
           <PhoneIcon className="h-5 w-5 text-header-orange" />
         </div>
@@ -35,7 +38,7 @@ export function ContactSection({ contact, className }: ContactSectionProps) {
             {contact.phoneNumber}
           </span>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { ContactCard as ContactCardType } from "./types";
@@ -15,6 +16,73 @@ const iconMap = {
 
 export function ContactCard({ card, className }: ContactCardProps) {
   const IconComponent = iconMap[card.icon];
+  const isPhone = card.icon === "phone";
+  const isEmail = card.icon === "mail";
+
+  const renderDetails = () => {
+    if (Array.isArray(card.details)) {
+      return card.details.map((detail, index) => {
+        if (isPhone) {
+          const phoneHref = `tel:${detail.replace(/[^0-9+]/g, "")}`;
+          return (
+            <Link
+              key={index}
+              href={phoneHref}
+              className="text-base lg:text-lg text-muted-foreground hover:text-header-orange transition-colors block"
+            >
+              {detail}
+            </Link>
+          );
+        }
+        if (isEmail) {
+          return (
+            <Link
+              key={index}
+              href={`mailto:${detail}`}
+              className="text-base lg:text-lg text-muted-foreground hover:text-header-orange transition-colors block"
+            >
+              {detail}
+            </Link>
+          );
+        }
+        return (
+          <p
+            key={index}
+            className="text-base lg:text-lg text-muted-foreground"
+          >
+            {detail}
+          </p>
+        );
+      });
+    }
+
+    if (isPhone) {
+      const phoneHref = `tel:${card.details.replace(/[^0-9+]/g, "")}`;
+      return (
+        <Link
+          href={phoneHref}
+          className="text-base lg:text-lg text-muted-foreground hover:text-header-orange transition-colors"
+        >
+          {card.details}
+        </Link>
+      );
+    }
+    if (isEmail) {
+      return (
+        <Link
+          href={`mailto:${card.details}`}
+          className="text-base lg:text-lg text-muted-foreground hover:text-header-orange transition-colors"
+        >
+          {card.details}
+        </Link>
+      );
+    }
+    return (
+      <p className="text-base lg:text-lg text-muted-foreground">
+        {card.details}
+      </p>
+    );
+  };
 
   return (
     <div
@@ -38,22 +106,7 @@ export function ContactCard({ card, className }: ContactCardProps) {
         </h3>
 
         {/* Details */}
-        <div className="space-y-1">
-          {Array.isArray(card.details) ? (
-            card.details.map((detail, index) => (
-              <p
-                key={index}
-                className="text-base lg:text-lg text-muted-foreground"
-              >
-                {detail}
-              </p>
-            ))
-          ) : (
-            <p className="text-base lg:text-lg text-muted-foreground">
-              {card.details}
-            </p>
-          )}
-        </div>
+        <div className="space-y-1">{renderDetails()}</div>
       </div>
     </div>
   );

@@ -12,13 +12,13 @@ export const defaultContactUsConfig: ContactUsConfig = {
       id: "phone",
       title: "Call Us Anytime",
       icon: "phone",
-      details: ["(630)-544-1019", "(630)-943-2246"],
+      details: ["+1 3313286900"],
     },
     {
       id: "location",
       title: "Visit Our Office",
       icon: "location",
-      details: "900 Paramount Pkwy, 60510",
+      details: "3519 MATAPAN CRES VANCOUVER BC V5M 4A9 CANADA",
     },
   ],
   form: {

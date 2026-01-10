@@ -46,9 +46,20 @@ export function ContactBar({
               <span className="text-header-text-on-dark font-semibold">
                 SUPPORT 24/7:
               </span>
-              <span className="text-header-text-on-dark">
-                {contactInfo.phone.join(", ")}
-              </span>
+              {contactInfo.phone.map((phone, index) => {
+                const phoneHref = `tel:${phone.replace(/[^0-9+]/g, "")}`;
+                return (
+                  <span key={index}>
+                    <a
+                      href={phoneHref}
+                      className="text-header-text-on-dark hover:text-header-orange transition-colors"
+                    >
+                      {phone}
+                    </a>
+                    {index < contactInfo.phone.length - 1 && ", "}
+                  </span>
+                );
+              })}
             </div>
 
             <Separator
